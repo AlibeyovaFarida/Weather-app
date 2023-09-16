@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ul li {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: rgb(2, 1, 31);
+}
+.container .basic-inform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(22, 14, 51);
+  padding: 2rem;
+}
+.container .basic-inform .search-city {
+  margin-bottom: 3rem;
+}
+.container .basic-inform .search-city .search {
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 20px;
+  font-style: italic;
+}
+.container .basic-inform .content .main-content {
+  padding: 0 4rem;
+  margin-bottom: 5rem;
+}
+.container .basic-inform .content .main-content .temp {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 500;
+  text-align: center;
+}
+.container .basic-inform .content .main-content .temp .unit {
+  font-size: 75px;
+  font-weight: 200;
+  color: rgb(63, 75, 126);
+}
+.container .basic-inform .content .main-content .desc {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(63, 75, 126);
+}
+.container .basic-inform .content .additional-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .basic-inform .content .additional-content .date {
+  text-align: center;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 18px;
+}
+.container .basic-inform .content .additional-content .maxmintemp {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(63, 75, 126);
+}
+.container .basic-inform .content .additional-content .location {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+}
+.container .basic-inform .content .additional-content .location .city-name {
+  color: rgb(63, 75, 126);
+}
+.container .additional-inform {
+  width: 100%;
+  padding: 6rem 9rem;
+}
+.container .additional-inform .additional-inform-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container .additional-inform .additional-inform-top .next-day {
+  width: 140px;
+  background-color: rgb(22, 14, 51);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .additional-inform .additional-inform-top .next-day .weather-img {
+  margin-bottom: 2rem;
+}
+.container .additional-inform .additional-inform-top .next-day .day-date {
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.container .additional-inform .additional-inform-top .next-day .temp {
+  text-align: center;
+  color: #ffffff;
+}
+.container .additional-inform .additional-inform-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.container .additional-inform .additional-inform-bottom h4 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+.container .additional-inform .additional-inform-bottom .part-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .wind-status {
+  height: 160px;
+  background-color: rgb(22, 14, 51);
+  padding: 1.2rem 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .wind-status h6 {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 14px;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .wind-status .wind-speed {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .wind-status .wind-speed span {
+  font-size: 42px;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .wind-status .wind-direction {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .wind-status .wind-direction .direction {
+  color: #ffffff;
+  font-size: 12px;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .humidity {
+  height: 160px;
+  background-color: rgb(22, 14, 51);
+  padding: 1.2rem 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .humidity h6 {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 14px;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .humidity .percent {
+  font-size: 42px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .humidity .range-humidity {
+  width: 100%;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .humidity .range-humidity ul {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(63, 75, 126);
+  font-size: 12px;
+}
+.container .additional-inform .additional-inform-bottom .part-1 .humidity .range-humidity input {
+  display: block;
+  accent-color: rgb(200, 200, 72);
+}
+.container .additional-inform .additional-inform-bottom .part-1 .humidity .range-humidity label {
+  display: flex;
+  justify-content: right;
+  color: rgb(63, 75, 126);
+  font-size: 12px;
+}
+.container .additional-inform .additional-inform-bottom .part-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .visibility {
+  background-color: rgb(22, 14, 51);
+  padding: 1.2rem 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .visibility h6 {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 14px;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .visibility .visibility-mil {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .visibility .visibility-mil .mil-amount {
+  font-size: 42px;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .air-pressure {
+  background-color: rgb(22, 14, 51);
+  padding: 1.2rem 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .air-pressure h6 {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 14px;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .air-pressure .pressure {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.container .additional-inform .additional-inform-bottom .part-2 .air-pressure .pressure .pressure-amount {
+  font-size: 42px;
+}/*# sourceMappingURL=style.css.map */
